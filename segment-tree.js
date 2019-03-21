@@ -14,10 +14,6 @@ function segmentTree(array, fn, N) {
   return neutralTree(N);
 };
 
-function nextState(state, assignment, elves, gems) {
-  return state;
-}
-
 function recursiveSegmentTree(array, fn, N) {
   return segmentTree(array, fn, N);
 }
@@ -36,4 +32,8 @@ function assignAtLeastOne(tree, wishes, stash, elves, gems, week) {
 
 function assignPreferredGems(tree, wishes, stash, elves, gems) {
   return {};
+}
+
+function nextState(state, assignment, elves, gems) {
+  return state;
 }
